@@ -1,0 +1,1564 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='PartOne (PART1_EXCEL)' inline='true' name='federated.1ift2gd1nz69li1cgue5i1lmnheg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='PART1_EXCEL' name='excel-direct.14olfu51x0mlly1fq7edk0lpsgj5'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/lucas/Desktop/COURSES/TABLEAU_COURSE/SECTION 10/PART1_EXCEL.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.14olfu51x0mlly1fq7edk0lpsgj5' name='PartOne' table='[PartOne$]' type='table'>
+          <columns gridOrigin='A1:AP336:no:A1:AP336:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Pricing&#9;(With&#9;Negative&#9;Error)' ordinal='0' />
+            <column datatype='string' name='Batch&#9;Code' ordinal='1' />
+            <column datatype='string' name='Consultant&#9;Name' ordinal='2' />
+            <column datatype='string' name='Storage&#9;Code' ordinal='3' />
+            <column datatype='string' name='Storage&#9;ID' ordinal='4' />
+            <column datatype='integer' name='Last&#9;Milestone' ordinal='5' />
+            <column datatype='date' name='Milestone_01' ordinal='6' />
+            <column datatype='date' name='Milestone_02' ordinal='7' />
+            <column datatype='date' name='Milestone_03' ordinal='8' />
+            <column datatype='date' name='Milestone_04' ordinal='9' />
+            <column datatype='date' name='Milestone_05' ordinal='10' />
+            <column datatype='date' name='Milestone_06' ordinal='11' />
+            <column datatype='date' name='Milestone_07' ordinal='12' />
+            <column datatype='date' name='Milestone_08' ordinal='13' />
+            <column datatype='date' name='Milestone_09' ordinal='14' />
+            <column datatype='date' name='Milestone_10' ordinal='15' />
+            <column datatype='date' name='Milestone_11' ordinal='16' />
+            <column datatype='date' name='Milestone_12' ordinal='17' />
+            <column datatype='date' name='Milestone_13' ordinal='18' />
+            <column datatype='date' name='Milestone_14' ordinal='19' />
+            <column datatype='date' name='Milestone_15' ordinal='20' />
+            <column datatype='date' name='Milestone_16' ordinal='21' />
+            <column datatype='date' name='Milestone_17' ordinal='22' />
+            <column datatype='string' name='Milestone_18' ordinal='23' />
+            <column datatype='integer' name='Tracking&#9;Distance' ordinal='24' />
+            <column datatype='integer' name='Score&#9;Low&#9;Limit' ordinal='25' />
+            <column datatype='integer' name='Score&#9;High&#9;Limit' ordinal='26' />
+            <column datatype='integer' name='Score&#9;Average&#9;Limit' ordinal='27' />
+            <column datatype='integer' name='Total&#9;Cost&#9;of&#9;Removal' ordinal='28' />
+            <column datatype='integer' name='Customer&#9;Post&#9;Code' ordinal='29' />
+            <column datatype='string' name='State&#9;1' ordinal='30' />
+            <column datatype='string' name='State&#9;2' ordinal='31' />
+            <column datatype='string' name='Regional&#9;Group' ordinal='32' />
+            <column datatype='string' name='Country' ordinal='33' />
+            <column datatype='integer' name='Case&#9;Create&#9;Year' ordinal='34' />
+            <column datatype='integer' name='Case&#9;Create&#9;Month' ordinal='35' />
+            <column datatype='integer' name='Case&#9;Create&#9;Day' ordinal='36' />
+            <column datatype='string' name='Request&#9;Category' ordinal='37' />
+            <column datatype='string' name='Package&#9;Typee' ordinal='38' />
+            <column datatype='string' name='Package&#9;Code' ordinal='39' />
+            <column datatype='string' name='Customer&#9;Outcome' ordinal='40' />
+            <column datatype='string' name='Status.' ordinal='41' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AP336:no:A1:AP336:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pricing&#9;(With&#9;Negative&#9;Error)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pricing&#9;(With&#9;Negative&#9;Error)]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Pricing&#9;(With&#9;Negative&#9;Error)</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Batch&#9;Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Batch&#9;Code]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Batch&#9;Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Consultant&#9;Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Consultant&#9;Name]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Consultant&#9;Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Storage&#9;Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Storage&#9;Code]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Storage&#9;Code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Storage&#9;ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Storage&#9;ID]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Storage&#9;ID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last&#9;Milestone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Last&#9;Milestone]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Last&#9;Milestone</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_01</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_01]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_01</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_02</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_02]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_02</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_03</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_03]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_03</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_04</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_04]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_04</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_05</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_05]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_05</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_06</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_06]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_06</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_07</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_07]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_07</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_08</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_08]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_08</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_09</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_09]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_09</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_10</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_10]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_10</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_11</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_11]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_11</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_12</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_12]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_12</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_13</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_13]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_13</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_14</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_14]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_14</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_15</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_15]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_15</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_16</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_16]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_16</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_17</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_17]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_17</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_18</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Milestone_18]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Milestone_18</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tracking&#9;Distance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tracking&#9;Distance]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Tracking&#9;Distance</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Score&#9;Low&#9;Limit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Score&#9;Low&#9;Limit]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Score&#9;Low&#9;Limit</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Score&#9;High&#9;Limit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Score&#9;High&#9;Limit]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Score&#9;High&#9;Limit</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Score&#9;Average&#9;Limit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Score&#9;Average&#9;Limit]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Score&#9;Average&#9;Limit</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total&#9;Cost&#9;of&#9;Removal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total&#9;Cost&#9;of&#9;Removal]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Total&#9;Cost&#9;of&#9;Removal</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer&#9;Post&#9;Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Customer&#9;Post&#9;Code]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Customer&#9;Post&#9;Code</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State&#9;1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State&#9;1]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>State&#9;1</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State&#9;2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State&#9;2]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>State&#9;2</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Regional&#9;Group</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Regional&#9;Group]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Regional&#9;Group</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case&#9;Create&#9;Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Case&#9;Create&#9;Year]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Case&#9;Create&#9;Year</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case&#9;Create&#9;Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Case&#9;Create&#9;Month]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Case&#9;Create&#9;Month</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case&#9;Create&#9;Day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Case&#9;Create&#9;Day]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Case&#9;Create&#9;Day</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Request&#9;Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Request&#9;Category]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Request&#9;Category</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Package&#9;Typee</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Package&#9;Typee]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Package&#9;Typee</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Package&#9;Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Package&#9;Code]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Package&#9;Code</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer&#9;Outcome</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer&#9;Outcome]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Customer&#9;Outcome</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status.</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Status.]</local-name>
+            <parent-name>[PartOne]</parent-name>
+            <remote-alias>Status.</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Milestone 01' datatype='date' name='[Milestone_01]' role='dimension' type='ordinal' />
+      <column caption='Milestone 02' datatype='date' name='[Milestone_02]' role='dimension' type='ordinal' />
+      <column caption='Milestone 03' datatype='date' name='[Milestone_03]' role='dimension' type='ordinal' />
+      <column caption='Milestone 04' datatype='date' name='[Milestone_04]' role='dimension' type='ordinal' />
+      <column caption='Milestone 05' datatype='date' name='[Milestone_05]' role='dimension' type='ordinal' />
+      <column caption='Milestone 06' datatype='date' name='[Milestone_06]' role='dimension' type='ordinal' />
+      <column caption='Milestone 07' datatype='date' name='[Milestone_07]' role='dimension' type='ordinal' />
+      <column caption='Milestone 08' datatype='date' name='[Milestone_08]' role='dimension' type='ordinal' />
+      <column caption='Milestone 09' datatype='date' name='[Milestone_09]' role='dimension' type='ordinal' />
+      <column caption='Milestone 10' datatype='date' name='[Milestone_10]' role='dimension' type='ordinal' />
+      <column caption='Milestone 11' datatype='date' name='[Milestone_11]' role='dimension' type='ordinal' />
+      <column caption='Milestone 12' datatype='date' name='[Milestone_12]' role='dimension' type='ordinal' />
+      <column caption='Milestone 13' datatype='date' name='[Milestone_13]' role='dimension' type='ordinal' />
+      <column caption='Milestone 14' datatype='date' name='[Milestone_14]' role='dimension' type='ordinal' />
+      <column caption='Milestone 15' datatype='date' name='[Milestone_15]' role='dimension' type='ordinal' />
+      <column caption='Milestone 16' datatype='date' name='[Milestone_16]' role='dimension' type='ordinal' />
+      <column caption='Milestone 17' datatype='date' name='[Milestone_17]' role='dimension' type='ordinal' />
+      <column caption='Milestone 18' datatype='string' name='[Milestone_18]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State&#9;1]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State&#9;2]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='PartOne' datatype='table' name='[__tableau_internal_object_id__].[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/lucas/AppData/Local/Temp/TableauTemp/#TableauTemp_03u77sw01lu3pt15wifdz1dsdhmc.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/28/2024 06:37:53 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Pricing&#9;(With&#9;Negative&#9;Error)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pricing&#9;(With&#9;Negative&#9;Error)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pricing&#9;(With&#9;Negative&#9;Error)</remote-alias>
+              <ordinal>0</ordinal>
+              <family>PartOne</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>146</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Batch&#9;Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Batch&#9;Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Batch&#9;Code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>PartOne</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>335</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Consultant&#9;Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Consultant&#9;Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Consultant&#9;Name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>PartOne</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Storage&#9;Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Storage&#9;Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Storage&#9;Code</remote-alias>
+              <ordinal>3</ordinal>
+              <family>PartOne</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Storage&#9;ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Storage&#9;ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Storage&#9;ID</remote-alias>
+              <ordinal>4</ordinal>
+              <family>PartOne</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last&#9;Milestone</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Last&#9;Milestone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Last&#9;Milestone</remote-alias>
+              <ordinal>5</ordinal>
+              <family>PartOne</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_01</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_01]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_01</remote-alias>
+              <ordinal>6</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>315</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_02</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_02]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_02</remote-alias>
+              <ordinal>7</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>318</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_03</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_03]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_03</remote-alias>
+              <ordinal>8</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>317</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_04</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_04]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_04</remote-alias>
+              <ordinal>9</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>288</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_05</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_05]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_05</remote-alias>
+              <ordinal>10</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>274</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_06</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_06]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_06</remote-alias>
+              <ordinal>11</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>147</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_07</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_07]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_07</remote-alias>
+              <ordinal>12</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>148</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_08</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_08]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_08</remote-alias>
+              <ordinal>13</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>145</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_09</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_09]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_09</remote-alias>
+              <ordinal>14</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>143</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_10</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_10]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_10</remote-alias>
+              <ordinal>15</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>143</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_11</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_11]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_11</remote-alias>
+              <ordinal>16</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>139</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_12</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_12]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_12</remote-alias>
+              <ordinal>17</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>117</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_13</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_13]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_13</remote-alias>
+              <ordinal>18</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>106</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_14</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_14]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_14</remote-alias>
+              <ordinal>19</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>58</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_15</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_15]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_15</remote-alias>
+              <ordinal>20</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_16</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_16]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_16</remote-alias>
+              <ordinal>21</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_17</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_17]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_17</remote-alias>
+              <ordinal>22</ordinal>
+              <family>PartOne</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_18</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Milestone_18]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_18</remote-alias>
+              <ordinal>23</ordinal>
+              <family>PartOne</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tracking&#9;Distance</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Tracking&#9;Distance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tracking&#9;Distance</remote-alias>
+              <ordinal>24</ordinal>
+              <family>PartOne</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>96</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Score&#9;Low&#9;Limit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Score&#9;Low&#9;Limit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Score&#9;Low&#9;Limit</remote-alias>
+              <ordinal>25</ordinal>
+              <family>PartOne</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Score&#9;High&#9;Limit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Score&#9;High&#9;Limit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Score&#9;High&#9;Limit</remote-alias>
+              <ordinal>26</ordinal>
+              <family>PartOne</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Score&#9;Average&#9;Limit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Score&#9;Average&#9;Limit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Score&#9;Average&#9;Limit</remote-alias>
+              <ordinal>27</ordinal>
+              <family>PartOne</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total&#9;Cost&#9;of&#9;Removal</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total&#9;Cost&#9;of&#9;Removal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total&#9;Cost&#9;of&#9;Removal</remote-alias>
+              <ordinal>28</ordinal>
+              <family>PartOne</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer&#9;Post&#9;Code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Customer&#9;Post&#9;Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer&#9;Post&#9;Code</remote-alias>
+              <ordinal>29</ordinal>
+              <family>PartOne</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>213</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State&#9;1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State&#9;1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State&#9;1</remote-alias>
+              <ordinal>30</ordinal>
+              <family>PartOne</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State&#9;2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State&#9;2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State&#9;2</remote-alias>
+              <ordinal>31</ordinal>
+              <family>PartOne</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Regional&#9;Group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Regional&#9;Group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Regional&#9;Group</remote-alias>
+              <ordinal>32</ordinal>
+              <family>PartOne</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>33</ordinal>
+              <family>PartOne</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Case&#9;Create&#9;Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Case&#9;Create&#9;Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Case&#9;Create&#9;Year</remote-alias>
+              <ordinal>34</ordinal>
+              <family>PartOne</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Case&#9;Create&#9;Month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Case&#9;Create&#9;Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Case&#9;Create&#9;Month</remote-alias>
+              <ordinal>35</ordinal>
+              <family>PartOne</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Case&#9;Create&#9;Day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Case&#9;Create&#9;Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Case&#9;Create&#9;Day</remote-alias>
+              <ordinal>36</ordinal>
+              <family>PartOne</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Request&#9;Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Request&#9;Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Request&#9;Category</remote-alias>
+              <ordinal>37</ordinal>
+              <family>PartOne</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Package&#9;Typee</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Package&#9;Typee]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Package&#9;Typee</remote-alias>
+              <ordinal>38</ordinal>
+              <family>PartOne</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Package&#9;Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Package&#9;Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Package&#9;Code</remote-alias>
+              <ordinal>39</ordinal>
+              <family>PartOne</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer&#9;Outcome</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer&#9;Outcome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer&#9;Outcome</remote-alias>
+              <ordinal>40</ordinal>
+              <family>PartOne</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Status.</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Status.]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Status.</remote-alias>
+              <ordinal>41</ordinal>
+              <family>PartOne</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='PartOne' id='PartOne_66F9276FBF57489EBDDFC90121ED9FA8'>
+            <properties context=''>
+              <relation connection='excel-direct.14olfu51x0mlly1fq7edk0lpsgj5' name='PartOne' table='[PartOne$]' type='table'>
+                <columns gridOrigin='A1:AP336:no:A1:AP336:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Pricing&#9;(With&#9;Negative&#9;Error)' ordinal='0' />
+                  <column datatype='string' name='Batch&#9;Code' ordinal='1' />
+                  <column datatype='string' name='Consultant&#9;Name' ordinal='2' />
+                  <column datatype='string' name='Storage&#9;Code' ordinal='3' />
+                  <column datatype='string' name='Storage&#9;ID' ordinal='4' />
+                  <column datatype='integer' name='Last&#9;Milestone' ordinal='5' />
+                  <column datatype='date' name='Milestone_01' ordinal='6' />
+                  <column datatype='date' name='Milestone_02' ordinal='7' />
+                  <column datatype='date' name='Milestone_03' ordinal='8' />
+                  <column datatype='date' name='Milestone_04' ordinal='9' />
+                  <column datatype='date' name='Milestone_05' ordinal='10' />
+                  <column datatype='date' name='Milestone_06' ordinal='11' />
+                  <column datatype='date' name='Milestone_07' ordinal='12' />
+                  <column datatype='date' name='Milestone_08' ordinal='13' />
+                  <column datatype='date' name='Milestone_09' ordinal='14' />
+                  <column datatype='date' name='Milestone_10' ordinal='15' />
+                  <column datatype='date' name='Milestone_11' ordinal='16' />
+                  <column datatype='date' name='Milestone_12' ordinal='17' />
+                  <column datatype='date' name='Milestone_13' ordinal='18' />
+                  <column datatype='date' name='Milestone_14' ordinal='19' />
+                  <column datatype='date' name='Milestone_15' ordinal='20' />
+                  <column datatype='date' name='Milestone_16' ordinal='21' />
+                  <column datatype='date' name='Milestone_17' ordinal='22' />
+                  <column datatype='string' name='Milestone_18' ordinal='23' />
+                  <column datatype='integer' name='Tracking&#9;Distance' ordinal='24' />
+                  <column datatype='integer' name='Score&#9;Low&#9;Limit' ordinal='25' />
+                  <column datatype='integer' name='Score&#9;High&#9;Limit' ordinal='26' />
+                  <column datatype='integer' name='Score&#9;Average&#9;Limit' ordinal='27' />
+                  <column datatype='integer' name='Total&#9;Cost&#9;of&#9;Removal' ordinal='28' />
+                  <column datatype='integer' name='Customer&#9;Post&#9;Code' ordinal='29' />
+                  <column datatype='string' name='State&#9;1' ordinal='30' />
+                  <column datatype='string' name='State&#9;2' ordinal='31' />
+                  <column datatype='string' name='Regional&#9;Group' ordinal='32' />
+                  <column datatype='string' name='Country' ordinal='33' />
+                  <column datatype='integer' name='Case&#9;Create&#9;Year' ordinal='34' />
+                  <column datatype='integer' name='Case&#9;Create&#9;Month' ordinal='35' />
+                  <column datatype='integer' name='Case&#9;Create&#9;Day' ordinal='36' />
+                  <column datatype='string' name='Request&#9;Category' ordinal='37' />
+                  <column datatype='string' name='Package&#9;Typee' ordinal='38' />
+                  <column datatype='string' name='Package&#9;Code' ordinal='39' />
+                  <column datatype='string' name='Customer&#9;Outcome' ordinal='40' />
+                  <column datatype='string' name='Status.' ordinal='41' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='PartOne (PART1_EXCEL)' name='federated.1ift2gd1nz69li1cgue5i1lmnheg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ift2gd1nz69li1cgue5i1lmnheg'>
+            <column datatype='integer' name='[Case&#9;Create&#9;Day]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Case&#9;Create&#9;Month]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Case&#9;Create&#9;Year]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Customer&#9;Post&#9;Code]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Last&#9;Milestone]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Pricing&#9;(With&#9;Negative&#9;Error)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Score&#9;Average&#9;Limit]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Score&#9;High&#9;Limit]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Score&#9;Low&#9;Limit]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total&#9;Cost&#9;of&#9;Removal]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Tracking&#9;Distance]' role='measure' type='quantitative' />
+            <column caption='PartOne' datatype='table' name='[__tableau_internal_object_id__].[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[PartOne_66F9276FBF57489EBDDFC90121ED9FA8]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:PartOne_66F9276FBF57489EBDDFC90121ED9FA8:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Case&#9;Create&#9;Day]' derivation='Sum' name='[sum:Case&#9;Create&#9;Day:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Case&#9;Create&#9;Month]' derivation='Sum' name='[sum:Case&#9;Create&#9;Month:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Case&#9;Create&#9;Year]' derivation='Sum' name='[sum:Case&#9;Create&#9;Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Customer&#9;Post&#9;Code]' derivation='Sum' name='[sum:Customer&#9;Post&#9;Code:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Last&#9;Milestone]' derivation='Sum' name='[sum:Last&#9;Milestone:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pricing&#9;(With&#9;Negative&#9;Error)]' derivation='Sum' name='[sum:Pricing&#9;(With&#9;Negative&#9;Error):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Score&#9;Average&#9;Limit]' derivation='Sum' name='[sum:Score&#9;Average&#9;Limit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Score&#9;High&#9;Limit]' derivation='Sum' name='[sum:Score&#9;High&#9;Limit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Score&#9;Low&#9;Limit]' derivation='Sum' name='[sum:Score&#9;Low&#9;Limit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total&#9;Cost&#9;of&#9;Removal]' derivation='Sum' name='[sum:Total&#9;Cost&#9;of&#9;Removal:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Tracking&#9;Distance]' derivation='Sum' name='[sum:Tracking&#9;Distance:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1ift2gd1nz69li1cgue5i1lmnheg].[Multiple Values]</rows>
+        <cols>[federated.1ift2gd1nz69li1cgue5i1lmnheg].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{BA85D662-D61D-45C2-BCF5-275064B2EF88}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2ABA4518-C930-4D4E-B277-E5DAB35622C0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      BoBE+x94IDQ/QgmFwwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
