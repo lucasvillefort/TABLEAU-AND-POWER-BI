@@ -1,0 +1,3333 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://localhost' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://vizhub/workbooks/Book2_17331575403090?rev=1.2' id='Book2_17331575403090' path='/workbooks' revision='1.2' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Pivot Structure' inline='true' name='federated.0lh9e9x0uer2qu11g8d2v17f4rsp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Intermediate+Training+Data+Set_2021.09.24_V1+-+Part+2' name='excel-direct.1vr5yg51p9vp0n152s3s91c5jnk8'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' interpretationMode='1' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='date' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Milestone 01]' />
+            <value name='[Milestone 02]' />
+            <value name='[Milestone 03]' />
+            <value name='[Milestone 04]' />
+            <value name='[Milestone 05]' />
+            <value name='[Milestone 06]' />
+            <value name='[Milestone 07]' />
+            <value name='[Milestone 08]' />
+            <value name='[Milestone 09]' />
+            <value name='[Milestone 10]' />
+            <value name='[Milestone 11]' />
+            <value name='[Milestone 12]' />
+            <value name='[Milestone 13]' />
+            <value name='[Milestone 14]' />
+            <value name='[Milestone 15]' />
+            <value name='[Milestone 16]' />
+            <value name='[Milestone 17]' />
+            <value name='[Milestone 18]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Intermediate Training Data Set_].[Milestone_01]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_02]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_03]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_04]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_05]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_06]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_07]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_08]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_09]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_10]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_11]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_12]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_13]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_14]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_15]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_16]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_17]' />
+              <field name='[Intermediate Training Data Set_].[Milestone_18]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.1vr5yg51p9vp0n152s3s91c5jnk8' name='Intermediate Training Data Set_' table='[&apos;Intermediate Training Data Set_$&apos;]' type='table'>
+            <columns gridOrigin='A1:AP1273:no:A1:AP1273:1' header='yes' lost='0' outcome='1' processed='19130'>
+              <column datatype='real' name='Pricing (With Negative Error)' ordinal='0' />
+              <column datatype='string' name='Batch Code' ordinal='1' />
+              <column datatype='string' name='Consultant' ordinal='2' />
+              <column datatype='string' name='Storage Code' ordinal='3' />
+              <column datatype='string' name='Storage ID' ordinal='4' />
+              <column datatype='integer' name='Latest Milestone' ordinal='5' />
+              <column datatype='date' name='Milestone_01' ordinal='6' />
+              <column datatype='date' name='Milestone_02' ordinal='7' />
+              <column datatype='date' name='Milestone_03' ordinal='8' />
+              <column datatype='date' name='Milestone_04' ordinal='9' />
+              <column datatype='date' name='Milestone_05' ordinal='10' />
+              <column datatype='date' name='Milestone_06' ordinal='11' />
+              <column datatype='date' name='Milestone_07' ordinal='12' />
+              <column datatype='date' name='Milestone_08' ordinal='13' />
+              <column datatype='date' name='Milestone_09' ordinal='14' />
+              <column datatype='date' name='Milestone_10' ordinal='15' />
+              <column datatype='date' name='Milestone_11' ordinal='16' />
+              <column datatype='date' name='Milestone_12' ordinal='17' />
+              <column datatype='date' name='Milestone_13' ordinal='18' />
+              <column datatype='date' name='Milestone_14' ordinal='19' />
+              <column datatype='date' name='Milestone_15' ordinal='20' />
+              <column datatype='date' name='Milestone_16' ordinal='21' />
+              <column datatype='date' name='Milestone_17' ordinal='22' />
+              <column datatype='date' name='Milestone_18' ordinal='23' />
+              <column datatype='real' name='Tracking Distance' ordinal='24' />
+              <column datatype='real' name='Score Low Limit' ordinal='25' />
+              <column datatype='real' name='Score High Limit' ordinal='26' />
+              <column datatype='real' name='Score Average Limit' ordinal='27' />
+              <column datatype='real' name='Total Cost of Removal' ordinal='28' />
+              <column datatype='integer' name='Customer Post Code' ordinal='29' />
+              <column datatype='string' name='State 1' ordinal='30' />
+              <column datatype='string' name='State 2' ordinal='31' />
+              <column datatype='string' name='Regional Group' ordinal='32' />
+              <column datatype='string' name='Country' ordinal='33' />
+              <column datatype='integer' name='Case Create Year' ordinal='34' />
+              <column datatype='integer' name='Case Create Month' ordinal='35' />
+              <column datatype='integer' name='Case Create Day' ordinal='36' />
+              <column datatype='string' name='Request Category' ordinal='37' />
+              <column datatype='string' name='Package Type' ordinal='38' />
+              <column datatype='string' name='Package Code' ordinal='39' />
+              <column datatype='string' name='Customer Outcome' ordinal='40' />
+              <column datatype='string' name='Status' ordinal='41' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AP1273:no:A1:AP1273:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>19130</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pricing (With Negative Error)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pricing (With Negative Error)]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Pricing (With Negative Error)</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Batch Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Batch Code]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Batch Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Consultant</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Consultant]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Consultant</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Storage Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Storage Code]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Storage Code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Storage ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Storage ID]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Storage ID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latest Milestone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Latest Milestone]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Latest Milestone</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tracking Distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tracking Distance]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Tracking Distance</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Score Low Limit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Score Low Limit]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Score Low Limit</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Score High Limit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Score High Limit]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Score High Limit</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Score Average Limit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Score Average Limit]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Score Average Limit</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Cost of Removal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Cost of Removal]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Total Cost of Removal</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Post Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Customer Post Code]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Customer Post Code</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State 1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State 1]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>State 1</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State 2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State 2]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>State 2</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Regional Group</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Regional Group]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Regional Group</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case Create Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Case Create Year]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Case Create Year</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case Create Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Case Create Month]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Case Create Month</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case Create Day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Case Create Day]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Case Create Day</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Request Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Request Category]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Request Category</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Package Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Package Type]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Package Type</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Package Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Package Code]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Package Code</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Outcome</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Outcome]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Customer Outcome</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' hidden='true' name='[Case Create Day]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[Case Create Month]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[Case Create Year]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' hidden='true' name='[Customer Outcome]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' hidden='true' name='[Customer Post Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column datatype='string' hidden='true' name='[Package Code]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Package Type]' role='dimension' type='nominal' />
+      <column datatype='date' name='[Pivot Field Values]' role='dimension' type='ordinal' />
+      <column datatype='string' hidden='true' name='[Regional Group]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Request Category]' role='dimension' type='nominal' />
+      <column datatype='real' hidden='true' name='[Score Average Limit]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[Score High Limit]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[Score Low Limit]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[State 1]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' hidden='true' name='[State 2]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' hidden='true' name='[Status]' role='dimension' type='nominal' />
+      <column datatype='real' hidden='true' name='[Total Cost of Removal]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[Tracking Distance]' role='measure' type='quantitative' />
+      <column caption='Intermediate Training Data Set_' datatype='table' name='[__tableau_internal_object_id__].[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]' role='measure' type='quantitative' />
+      <column-instance column='[Pivot Field Values]' derivation='None' name='[none:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0d51l6r0memzkg1edyqk113h4987.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/05/2024 07:17:54 PM' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Pricing (With Negative Error)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Pricing (With Negative Error)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pricing (With Negative Error)</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1036</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Batch Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Batch Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Batch Code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2523</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Consultant</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Consultant]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Consultant</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Storage Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Storage Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Storage Code</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Storage ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Storage ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Storage ID</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latest Milestone</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Latest Milestone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latest Milestone</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Pivot</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4999</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brazil&quot;' />
+      </semantic-values>
+      <filter class='quantitative' column='[none:Pivot Field Values:qk]' filter-group='2' included-values='non-null' />
+      <object-graph>
+        <objects>
+          <object caption='Intermediate Training Data Set_' id='Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='date' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[Milestone 01]' />
+                  <value name='[Milestone 02]' />
+                  <value name='[Milestone 03]' />
+                  <value name='[Milestone 04]' />
+                  <value name='[Milestone 05]' />
+                  <value name='[Milestone 06]' />
+                  <value name='[Milestone 07]' />
+                  <value name='[Milestone 08]' />
+                  <value name='[Milestone 09]' />
+                  <value name='[Milestone 10]' />
+                  <value name='[Milestone 11]' />
+                  <value name='[Milestone 12]' />
+                  <value name='[Milestone 13]' />
+                  <value name='[Milestone 14]' />
+                  <value name='[Milestone 15]' />
+                  <value name='[Milestone 16]' />
+                  <value name='[Milestone 17]' />
+                  <value name='[Milestone 18]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[Intermediate Training Data Set_].[Milestone_01]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_02]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_03]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_04]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_05]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_06]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_07]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_08]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_09]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_10]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_11]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_12]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_13]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_14]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_15]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_16]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_17]' />
+                    <field name='[Intermediate Training Data Set_].[Milestone_18]' />
+                  </group>
+                </groups>
+                <relation connection='excel-direct.1vr5yg51p9vp0n152s3s91c5jnk8' name='Intermediate Training Data Set_' table='[&apos;Intermediate Training Data Set_$&apos;]' type='table'>
+                  <columns gridOrigin='A1:AP1273:no:A1:AP1273:1' header='yes' lost='0' outcome='1' processed='19130'>
+                    <column datatype='real' name='Pricing (With Negative Error)' ordinal='0' />
+                    <column datatype='string' name='Batch Code' ordinal='1' />
+                    <column datatype='string' name='Consultant' ordinal='2' />
+                    <column datatype='string' name='Storage Code' ordinal='3' />
+                    <column datatype='string' name='Storage ID' ordinal='4' />
+                    <column datatype='integer' name='Latest Milestone' ordinal='5' />
+                    <column datatype='date' name='Milestone_01' ordinal='6' />
+                    <column datatype='date' name='Milestone_02' ordinal='7' />
+                    <column datatype='date' name='Milestone_03' ordinal='8' />
+                    <column datatype='date' name='Milestone_04' ordinal='9' />
+                    <column datatype='date' name='Milestone_05' ordinal='10' />
+                    <column datatype='date' name='Milestone_06' ordinal='11' />
+                    <column datatype='date' name='Milestone_07' ordinal='12' />
+                    <column datatype='date' name='Milestone_08' ordinal='13' />
+                    <column datatype='date' name='Milestone_09' ordinal='14' />
+                    <column datatype='date' name='Milestone_10' ordinal='15' />
+                    <column datatype='date' name='Milestone_11' ordinal='16' />
+                    <column datatype='date' name='Milestone_12' ordinal='17' />
+                    <column datatype='date' name='Milestone_13' ordinal='18' />
+                    <column datatype='date' name='Milestone_14' ordinal='19' />
+                    <column datatype='date' name='Milestone_15' ordinal='20' />
+                    <column datatype='date' name='Milestone_16' ordinal='21' />
+                    <column datatype='date' name='Milestone_17' ordinal='22' />
+                    <column datatype='date' name='Milestone_18' ordinal='23' />
+                    <column datatype='real' name='Tracking Distance' ordinal='24' />
+                    <column datatype='real' name='Score Low Limit' ordinal='25' />
+                    <column datatype='real' name='Score High Limit' ordinal='26' />
+                    <column datatype='real' name='Score Average Limit' ordinal='27' />
+                    <column datatype='real' name='Total Cost of Removal' ordinal='28' />
+                    <column datatype='integer' name='Customer Post Code' ordinal='29' />
+                    <column datatype='string' name='State 1' ordinal='30' />
+                    <column datatype='string' name='State 2' ordinal='31' />
+                    <column datatype='string' name='Regional Group' ordinal='32' />
+                    <column datatype='string' name='Country' ordinal='33' />
+                    <column datatype='integer' name='Case Create Year' ordinal='34' />
+                    <column datatype='integer' name='Case Create Month' ordinal='35' />
+                    <column datatype='integer' name='Case Create Day' ordinal='36' />
+                    <column datatype='string' name='Request Category' ordinal='37' />
+                    <column datatype='string' name='Package Type' ordinal='38' />
+                    <column datatype='string' name='Package Code' ordinal='39' />
+                    <column datatype='string' name='Customer Outcome' ordinal='40' />
+                    <column datatype='string' name='Status' ordinal='41' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Table Structure' inline='true' name='federated.1645e3c1pmelcm11ofcge06srj6k' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Intermediate+Training+Data+Set_2021.09.24_V1+-+Part+2' name='excel-direct.1go5ve01f2myos1f9lwch0kwijvl'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' interpretationMode='1' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1go5ve01f2myos1f9lwch0kwijvl' name='Intermediate Training Data Set_' table='[&apos;Intermediate Training Data Set_$&apos;]' type='table'>
+          <columns gridOrigin='A1:AP1273:no:A1:AP1273:1' header='yes' lost='0' outcome='1' processed='19130'>
+            <column datatype='real' name='Pricing (With Negative Error)' ordinal='0' />
+            <column datatype='string' name='Batch Code' ordinal='1' />
+            <column datatype='string' name='Consultant' ordinal='2' />
+            <column datatype='string' name='Storage Code' ordinal='3' />
+            <column datatype='string' name='Storage ID' ordinal='4' />
+            <column datatype='integer' name='Latest Milestone' ordinal='5' />
+            <column datatype='date' name='Milestone_01' ordinal='6' />
+            <column datatype='date' name='Milestone_02' ordinal='7' />
+            <column datatype='date' name='Milestone_03' ordinal='8' />
+            <column datatype='date' name='Milestone_04' ordinal='9' />
+            <column datatype='date' name='Milestone_05' ordinal='10' />
+            <column datatype='date' name='Milestone_06' ordinal='11' />
+            <column datatype='date' name='Milestone_07' ordinal='12' />
+            <column datatype='date' name='Milestone_08' ordinal='13' />
+            <column datatype='date' name='Milestone_09' ordinal='14' />
+            <column datatype='date' name='Milestone_10' ordinal='15' />
+            <column datatype='date' name='Milestone_11' ordinal='16' />
+            <column datatype='date' name='Milestone_12' ordinal='17' />
+            <column datatype='date' name='Milestone_13' ordinal='18' />
+            <column datatype='date' name='Milestone_14' ordinal='19' />
+            <column datatype='date' name='Milestone_15' ordinal='20' />
+            <column datatype='date' name='Milestone_16' ordinal='21' />
+            <column datatype='date' name='Milestone_17' ordinal='22' />
+            <column datatype='date' name='Milestone_18' ordinal='23' />
+            <column datatype='real' name='Tracking Distance' ordinal='24' />
+            <column datatype='real' name='Score Low Limit' ordinal='25' />
+            <column datatype='real' name='Score High Limit' ordinal='26' />
+            <column datatype='real' name='Score Average Limit' ordinal='27' />
+            <column datatype='real' name='Total Cost of Removal' ordinal='28' />
+            <column datatype='integer' name='Customer Post Code' ordinal='29' />
+            <column datatype='string' name='State 1' ordinal='30' />
+            <column datatype='string' name='State 2' ordinal='31' />
+            <column datatype='string' name='Regional Group' ordinal='32' />
+            <column datatype='string' name='Country' ordinal='33' />
+            <column datatype='integer' name='Case Create Year' ordinal='34' />
+            <column datatype='integer' name='Case Create Month' ordinal='35' />
+            <column datatype='integer' name='Case Create Day' ordinal='36' />
+            <column datatype='string' name='Request Category' ordinal='37' />
+            <column datatype='string' name='Package Type' ordinal='38' />
+            <column datatype='string' name='Package Code' ordinal='39' />
+            <column datatype='string' name='Customer Outcome' ordinal='40' />
+            <column datatype='string' name='Status' ordinal='41' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AP1273:no:A1:AP1273:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>19130</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pricing (With Negative Error)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pricing (With Negative Error)]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Pricing (With Negative Error)</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Batch Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Batch Code]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Batch Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Consultant</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Consultant]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Consultant</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Storage Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Storage Code]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Storage Code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Storage ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Storage ID]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Storage ID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latest Milestone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Latest Milestone]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Latest Milestone</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_01</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_01]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_01</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_02</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_02]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_02</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_03</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_03]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_03</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_04</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_04]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_04</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_05</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_05]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_05</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_06</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_06]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_06</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_07</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_07]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_07</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_08</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_08]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_08</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_09</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_09]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_09</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_10</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_10]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_10</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_11</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_11]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_11</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_12</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_12]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_12</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_13</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_13]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_13</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_14</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_14]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_14</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_15</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_15]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_15</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_16</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_16]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_16</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_17</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_17]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_17</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milestone_18</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Milestone_18]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Milestone_18</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tracking Distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tracking Distance]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Tracking Distance</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Score Low Limit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Score Low Limit]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Score Low Limit</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Score High Limit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Score High Limit]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Score High Limit</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Score Average Limit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Score Average Limit]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Score Average Limit</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Cost of Removal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Cost of Removal]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Total Cost of Removal</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Post Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Customer Post Code]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Customer Post Code</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State 1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State 1]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>State 1</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State 2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State 2]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>State 2</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Regional Group</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Regional Group]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Regional Group</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case Create Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Case Create Year]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Case Create Year</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case Create Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Case Create Month]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Case Create Month</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case Create Day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Case Create Day]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Case Create Day</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Request Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Request Category]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Request Category</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Package Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Package Type]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Package Type</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Package Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Package Code]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Package Code</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Outcome</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Outcome]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Customer Outcome</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[Intermediate Training Data Set_]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LPT_RBR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Round_Price' datatype='real' name='[Calculation_546624428115181568]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ROUND([Pricing (With Negative Error)], 2 )' />
+      </column>
+      <column caption='function if, not Price ' datatype='string' name='[Calculation_546624428120285185]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='if SUM([Pricing (With Negative Error)]) &gt; 40000 &#13;&#10;   AND NOT  SUM([Pricing (With Negative Error)]) &gt; 80000&#13;&#10;then &quot;Yes&quot; &#13;&#10;else &quot;no&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Consultant upper Trim' datatype='string' name='[Calculation_648236893357957121]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='UPPER( TRIM([Consultant (copy)_648236893357920256]) )' />
+      </column>
+      <column caption='Customer Outcome (R1)' datatype='string' name='[Calculation_648236893359509507]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='REGEXP_REPLACE([Customer Outcome], &quot;Corporate&quot;, &quot;Corp&quot;)' />
+      </column>
+      <column caption='Customer Outcome (R2)' datatype='string' name='[Calculation_648236893360504836]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='REGEXP_REPLACE([Calculation_648236893359509507], &quot;Product&quot;, &quot;Prod&quot;)' />
+      </column>
+      <column caption='Customer Outcome (R3)' datatype='string' name='[Calculation_648236893363453958]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF CONTAINS([Customer Outcome], &quot;Corporate&quot;) THEN&#13;&#10;   REPLACE([Customer Outcome], &quot;Corporate&quot;, &quot;Corp&quot;)&#13;&#10;ELSEIF CONTAINS([Customer Outcome], &quot;Product&quot;) THEN&#13;&#10;    REPLACE([Customer Outcome], &quot;Product&quot;, &quot;Prod&quot;)&#13;&#10;ELSEIF CONTAINS([Customer Outcome], &quot;Customer&quot;) THEN&#13;&#10;    REPLACE([Customer Outcome], &quot;Customer&quot;, &quot;Custom&quot;)&#13;&#10;END' />
+      </column>
+      <column caption='function multiple combination' datatype='integer' name='[Calculation_941533821473660928]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF  (DATEPART(&apos;year&apos;, [Milestone_01]) = 2001&#13;&#10;    AND [Regional Group] = &quot;Eastern&quot;)&#13;&#10;    OR  [State 1] = &quot;NSW&quot;&#13;&#10;    &#13;&#10;THEN&#13;&#10;    1&#13;&#10;ELSE&#13;&#10;    0&#13;&#10;END' />
+      </column>
+      <column caption='function Nested if' datatype='integer' name='[Calculation_941533821475467265]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF  [Request Category] = &quot;Medium Priority&quot;&#13;&#10;THEN&#13;&#10;    IF [Regional Group] = &quot;Easter&quot; THEN 1 ELSE 0 END&#13;&#10;ELSE&#13;&#10;    IF [Regional Group] = &quot;Southern&quot; THEN 1 ELSE 0 END&#13;&#10;END' />
+      </column>
+      <column caption='function elseif' datatype='integer' name='[Calculation_941533821478842370]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF  [Request Category] = &quot;High Priority Level 1&quot; THEN 1&#13;&#10;ELSEIF  [Request Category] = &quot;High Priority Level 2&quot; THEN 1&#13;&#10;ELSEIF  [Request Category] = &quot;Lower Level Inquiry&quot; THEN 1&#13;&#10;ELSEIF  [Request Category] = &quot;Medium Priority&quot; THEN 1&#13;&#10;ELSEIF  [Request Category] = &quot;Short Term&quot; THEN 1&#13;&#10;ELSEIF  [Request Category] = &quot;Special Inquiry&quot; THEN 1&#13;&#10;ELSEIF  [Request Category] = &quot;Standard Inquiry&quot; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+      </column>
+      <column caption='Functions zn' datatype='real' name='[Calculation_941533821481742342]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM([Pricing (With Negative Error)])) + 10' />
+      </column>
+      <column caption='function IFNULL' datatype='real' name='[Calculation_941533821483057159]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IFNULL(SUM([Pricing (With Negative Error)]), 0)' />
+      </column>
+      <column caption='function isnull' datatype='boolean' name='[Calculation_941533821484539912]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='ISNULL(SUM([Pricing (With Negative Error)]))' />
+      </column>
+      <column caption='IF Functions (Solution)' datatype='real' name='[Calculation_941533821487988745]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Storage ID - Split 2] = 5000&#13;&#10;    THEN -ABS([Pricing (With Negative Error)])&#13;&#10;ELSEIF  [Storage ID - Split 2] = 5003&#13;&#10;    THEN 0&#13;&#10;ELSEIF [Storage ID - Split 2] = 5005 &#13;&#10;    THEN ABS([Pricing (With Negative Error)])&#13;&#10;end' />
+      </column>
+      <column caption='Consultant (copy)' datatype='string' name='[Consultant (copy)_648236893357920256]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Consultant]' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Customer Post Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Milestone 01' datatype='date' name='[Milestone_01]' role='dimension' type='ordinal' />
+      <column caption='Milestone 02' datatype='date' name='[Milestone_02]' role='dimension' type='ordinal' />
+      <column caption='Milestone 03' datatype='date' name='[Milestone_03]' role='dimension' type='ordinal' />
+      <column caption='Milestone 04' datatype='date' name='[Milestone_04]' role='dimension' type='ordinal' />
+      <column caption='Milestone 05' datatype='date' name='[Milestone_05]' role='dimension' type='ordinal' />
+      <column caption='Milestone 06' datatype='date' name='[Milestone_06]' role='dimension' type='ordinal' />
+      <column caption='Milestone 07' datatype='date' name='[Milestone_07]' role='dimension' type='ordinal' />
+      <column caption='Milestone 08' datatype='date' name='[Milestone_08]' role='dimension' type='ordinal' />
+      <column caption='Milestone 09' datatype='date' name='[Milestone_09]' role='dimension' type='ordinal' />
+      <column caption='Milestone 10' datatype='date' name='[Milestone_10]' role='dimension' type='ordinal' />
+      <column caption='Milestone 11' datatype='date' name='[Milestone_11]' role='dimension' type='ordinal' />
+      <column caption='Milestone 12' datatype='date' name='[Milestone_12]' role='dimension' type='ordinal' />
+      <column caption='Milestone 13' datatype='date' name='[Milestone_13]' role='dimension' type='ordinal' />
+      <column caption='Milestone 14' datatype='date' name='[Milestone_14]' role='dimension' type='ordinal' />
+      <column caption='Milestone 15' datatype='date' name='[Milestone_15]' role='dimension' type='ordinal' />
+      <column caption='Milestone 16' datatype='date' name='[Milestone_16]' role='dimension' type='ordinal' />
+      <column caption='Milestone 17' datatype='date' name='[Milestone_17]' role='dimension' type='ordinal' />
+      <column caption='Milestone 18' datatype='date' name='[Milestone_18]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[State 1]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State 2]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Storage ID - Split 1' datatype='string' name='[Storage ID - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1645e3c1pmelcm11ofcge06srj6k].[Storage ID]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Storage ID], &quot;.&quot;, 1 ) )' />
+      </column>
+      <column aggregation='Sum' caption='Storage ID - Split 2' datatype='integer' name='[Storage ID - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1645e3c1pmelcm11ofcge06srj6k].[Storage ID]'>
+        <calculation class='tableau' formula='INT( SPLIT( [Storage ID], &quot;.&quot;, 2 ) )' />
+      </column>
+      <column caption='Storage ID - Split 3' datatype='string' name='[Storage ID - Split 3]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.1645e3c1pmelcm11ofcge06srj6k].[Storage ID]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Storage ID], &quot;.&quot;, 3 ) )' />
+      </column>
+      <column caption='Intermediate Training Data Set_' datatype='table' name='[__tableau_internal_object_id__].[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]' role='measure' type='quantitative' />
+      <column caption='function case ' datatype='integer' name='[elseif (copy)_941533821480886277]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [Request Category]&#13;&#10;   WHEN &quot;High Priority Level 1&quot; THEN 1&#13;&#10;   WHEN &quot;High Priority Level 2&quot; THEN 2&#13;&#10;   WHEN &quot;Lower Level Inquiry&quot; THEN 3&#13;&#10;   WHEN &quot;Medium Priority&quot; THEN 4&#13;&#10;   WHEN &quot;Short Term&quot; THEN 5&#13;&#10;   WHEN &quot;Special Inquiry&quot; THEN 6&#13;&#10;   WHEN &quot;Standard Inquiry&quot; THEN 7&#13;&#10;ELSE 0&#13;&#10;END' />
+      </column>
+      <column-instance column='[Milestone_01]' derivation='Year' name='[yr:Milestone_01:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_048trfd0yyv3oy17ehgjz1foiuu2.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/05/2024 07:19:07 PM' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Pricing (With Negative Error)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Pricing (With Negative Error)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pricing (With Negative Error)</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>813</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Batch Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Batch Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Batch Code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1272</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Consultant</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Consultant]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Consultant</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Storage Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Storage Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Storage Code</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Storage ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Storage ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Storage ID</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>66</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latest Milestone</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Latest Milestone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latest Milestone</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_01</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_01]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_01</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>954</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_02</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_02]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_02</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1023</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_03</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_03]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_03</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1038</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_04</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_04]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_04</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>948</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_05</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_05]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_05</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>935</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_06</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_06]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_06</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>597</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_07</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_07]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_07</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>609</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_08</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_08]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_08</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>572</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_09</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_09]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_09</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>539</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_10</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_10]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_10</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>570</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_11</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_11]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_11</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>519</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_12</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_12]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_12</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>447</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_13</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_13]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_13</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>413</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_14</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_14]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_14</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>290</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_15</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_15]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_15</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>213</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_16</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_16]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_16</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>146</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_17</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_17]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_17</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milestone_18</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Milestone_18]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milestone_18</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tracking Distance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Tracking Distance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tracking Distance</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>555</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Score Low Limit</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Score Low Limit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Score Low Limit</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>552</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Score High Limit</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Score High Limit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Score High Limit</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>552</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Score Average Limit</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Score Average Limit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Score Average Limit</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>552</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Cost of Removal</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total Cost of Removal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Cost of Removal</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>552</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer Post Code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Customer Post Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer Post Code</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>509</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State 1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State 1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State 1</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State 2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State 2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State 2</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Regional Group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Regional Group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Regional Group</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Case Create Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Case Create Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Case Create Year</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Case Create Month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Case Create Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Case Create Month</remote-alias>
+              <ordinal>35</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Case Create Day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Case Create Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Case Create Day</remote-alias>
+              <ordinal>36</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Request Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Request Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Request Category</remote-alias>
+              <ordinal>37</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Package Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Package Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Package Type</remote-alias>
+              <ordinal>38</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Package Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Package Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Package Code</remote-alias>
+              <ordinal>39</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer Outcome</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer Outcome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer Outcome</remote-alias>
+              <ordinal>40</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Status</remote-alias>
+              <ordinal>41</ordinal>
+              <family>Intermediate Training Data Set_</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LPT_RBR_S2' />
+              <object-id>[Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[yr:Milestone_01:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>2008</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>2028</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2004</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2024</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>2012</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>2009</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>2030</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>2005</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>2025</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>2018</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>2001</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>2021</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>2016</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>2006</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>2026</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>2013</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>2014</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>2019</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2010</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2031</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>2007</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>2027</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2002</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2022</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>2015</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>2011</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2003</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2023</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brazil&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Pricing (With Negative Error)' />
+        <field-sort-custom-order field='Calculation_546624428120285185' />
+        <field-sort-custom-order field='Calculation_546624428115181568' />
+        <field-sort-custom-order field='Batch Code' />
+        <field-sort-custom-order field='Consultant' />
+        <field-sort-custom-order field='Consultant (copy)_648236893357920256' />
+        <field-sort-custom-order field='Calculation_648236893357957121' />
+        <field-sort-custom-order field='Storage Code' />
+        <field-sort-custom-order field='Storage ID' />
+        <field-sort-custom-order field='Latest Milestone' />
+        <field-sort-custom-order field='Milestone_01' />
+        <field-sort-custom-order field='Milestone_02' />
+        <field-sort-custom-order field='Milestone_03' />
+        <field-sort-custom-order field='Milestone_04' />
+        <field-sort-custom-order field='Milestone_05' />
+        <field-sort-custom-order field='Milestone_06' />
+        <field-sort-custom-order field='Milestone_07' />
+        <field-sort-custom-order field='Milestone_08' />
+        <field-sort-custom-order field='Milestone_09' />
+        <field-sort-custom-order field='Milestone_10' />
+        <field-sort-custom-order field='Milestone_11' />
+        <field-sort-custom-order field='Milestone_12' />
+        <field-sort-custom-order field='Milestone_13' />
+        <field-sort-custom-order field='Milestone_14' />
+        <field-sort-custom-order field='Milestone_15' />
+        <field-sort-custom-order field='Milestone_16' />
+        <field-sort-custom-order field='Milestone_17' />
+        <field-sort-custom-order field='Milestone_18' />
+        <field-sort-custom-order field='Tracking Distance' />
+        <field-sort-custom-order field='Score Low Limit' />
+        <field-sort-custom-order field='Score High Limit' />
+        <field-sort-custom-order field='Score Average Limit' />
+        <field-sort-custom-order field='Total Cost of Removal' />
+        <field-sort-custom-order field='Customer Post Code' />
+        <field-sort-custom-order field='State 1' />
+        <field-sort-custom-order field='State 2' />
+        <field-sort-custom-order field='Regional Group' />
+        <field-sort-custom-order field='Country' />
+        <field-sort-custom-order field='Case Create Year' />
+        <field-sort-custom-order field='Case Create Month' />
+        <field-sort-custom-order field='Case Create Day' />
+        <field-sort-custom-order field='Request Category' />
+        <field-sort-custom-order field='Package Type' />
+        <field-sort-custom-order field='Package Code' />
+        <field-sort-custom-order field='Customer Outcome' />
+        <field-sort-custom-order field='Calculation_648236893363453958' />
+        <field-sort-custom-order field='Calculation_648236893359509507' />
+        <field-sort-custom-order field='Calculation_648236893360504836' />
+        <field-sort-custom-order field='Status' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Intermediate Training Data Set_' id='Intermediate Training Data Set!_8B051F04C3804BDB96B71E1F4E9EF402'>
+            <properties context=''>
+              <relation connection='excel-direct.1go5ve01f2myos1f9lwch0kwijvl' name='Intermediate Training Data Set_' table='[&apos;Intermediate Training Data Set_$&apos;]' type='table'>
+                <columns gridOrigin='A1:AP1273:no:A1:AP1273:1' header='yes' lost='0' outcome='1' processed='19130'>
+                  <column datatype='real' name='Pricing (With Negative Error)' ordinal='0' />
+                  <column datatype='string' name='Batch Code' ordinal='1' />
+                  <column datatype='string' name='Consultant' ordinal='2' />
+                  <column datatype='string' name='Storage Code' ordinal='3' />
+                  <column datatype='string' name='Storage ID' ordinal='4' />
+                  <column datatype='integer' name='Latest Milestone' ordinal='5' />
+                  <column datatype='date' name='Milestone_01' ordinal='6' />
+                  <column datatype='date' name='Milestone_02' ordinal='7' />
+                  <column datatype='date' name='Milestone_03' ordinal='8' />
+                  <column datatype='date' name='Milestone_04' ordinal='9' />
+                  <column datatype='date' name='Milestone_05' ordinal='10' />
+                  <column datatype='date' name='Milestone_06' ordinal='11' />
+                  <column datatype='date' name='Milestone_07' ordinal='12' />
+                  <column datatype='date' name='Milestone_08' ordinal='13' />
+                  <column datatype='date' name='Milestone_09' ordinal='14' />
+                  <column datatype='date' name='Milestone_10' ordinal='15' />
+                  <column datatype='date' name='Milestone_11' ordinal='16' />
+                  <column datatype='date' name='Milestone_12' ordinal='17' />
+                  <column datatype='date' name='Milestone_13' ordinal='18' />
+                  <column datatype='date' name='Milestone_14' ordinal='19' />
+                  <column datatype='date' name='Milestone_15' ordinal='20' />
+                  <column datatype='date' name='Milestone_16' ordinal='21' />
+                  <column datatype='date' name='Milestone_17' ordinal='22' />
+                  <column datatype='date' name='Milestone_18' ordinal='23' />
+                  <column datatype='real' name='Tracking Distance' ordinal='24' />
+                  <column datatype='real' name='Score Low Limit' ordinal='25' />
+                  <column datatype='real' name='Score High Limit' ordinal='26' />
+                  <column datatype='real' name='Score Average Limit' ordinal='27' />
+                  <column datatype='real' name='Total Cost of Removal' ordinal='28' />
+                  <column datatype='integer' name='Customer Post Code' ordinal='29' />
+                  <column datatype='string' name='State 1' ordinal='30' />
+                  <column datatype='string' name='State 2' ordinal='31' />
+                  <column datatype='string' name='Regional Group' ordinal='32' />
+                  <column datatype='string' name='Country' ordinal='33' />
+                  <column datatype='integer' name='Case Create Year' ordinal='34' />
+                  <column datatype='integer' name='Case Create Month' ordinal='35' />
+                  <column datatype='integer' name='Case Create Day' ordinal='36' />
+                  <column datatype='string' name='Request Category' ordinal='37' />
+                  <column datatype='string' name='Package Type' ordinal='38' />
+                  <column datatype='string' name='Package Code' ordinal='39' />
+                  <column datatype='string' name='Customer Outcome' ordinal='40' />
+                  <column datatype='string' name='Status' ordinal='41' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Nested if'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Table Structure' name='federated.1645e3c1pmelcm11ofcge06srj6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1645e3c1pmelcm11ofcge06srj6k'>
+            <column caption='function Nested if' datatype='integer' name='[Calculation_941533821475467265]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF  [Request Category] = &quot;Medium Priority&quot;&#13;&#10;THEN&#13;&#10;    IF [Regional Group] = &quot;Easter&quot; THEN 1 ELSE 0 END&#13;&#10;ELSE&#13;&#10;    IF [Regional Group] = &quot;Southern&quot; THEN 1 ELSE 0 END&#13;&#10;END' />
+            </column>
+            <column datatype='real' name='[Pricing (With Negative Error)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Regional Group]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Request Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State 1]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Regional Group]' derivation='None' name='[none:Regional Group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Request Category]' derivation='None' name='[none:Request Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State 1]' derivation='None' name='[none:State 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_941533821475467265]' derivation='Sum' name='[sum:Calculation_941533821475467265:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pricing (With Negative Error)]' derivation='Sum' name='[sum:Pricing (With Negative Error):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1645e3c1pmelcm11ofcge06srj6k].[none:Request Category:nk]' value='78' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Pricing (With Negative Error):qk]' />
+              <text column='[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Calculation_941533821475467265:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1645e3c1pmelcm11ofcge06srj6k].[none:Regional Group:nk] / [federated.1645e3c1pmelcm11ofcge06srj6k].[none:State 1:nk])</rows>
+        <cols>[federated.1645e3c1pmelcm11ofcge06srj6k].[none:Request Category:nk]</cols>
+      </table>
+      <simple-id uuid='{553AB25F-F36A-4C58-9754-435058645CF2}' />
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <repository-location derived-from='https://vizhub/workbooks/Book2_17331575403090/Sheet1?rev=' id='109488741' path='/workbooks/Book2_17331575403090' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Table Structure' name='federated.1645e3c1pmelcm11ofcge06srj6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1645e3c1pmelcm11ofcge06srj6k'>
+            <column caption='Consultant upper Trim' datatype='string' name='[Calculation_648236893357957121]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='UPPER( TRIM([Consultant (copy)_648236893357920256]) )' />
+            </column>
+            <column caption='Consultant (copy)' datatype='string' name='[Consultant (copy)_648236893357920256]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Consultant]' />
+            </column>
+            <column datatype='string' name='[Consultant]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_648236893357957121]' derivation='None' name='[none:Calculation_648236893357957121:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Consultant]' derivation='None' name='[none:Consultant:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1645e3c1pmelcm11ofcge06srj6k].[none:Calculation_648236893357957121:nk]' value='136' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1645e3c1pmelcm11ofcge06srj6k].[none:Consultant:nk] / [federated.1645e3c1pmelcm11ofcge06srj6k].[none:Calculation_648236893357957121:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{197E709E-F079-45B6-A3F3-D140B1CAE85E}' />
+    </worksheet>
+    <worksheet name='Sheet 11'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Table Structure' name='federated.1645e3c1pmelcm11ofcge06srj6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1645e3c1pmelcm11ofcge06srj6k'>
+            <column caption='IF Functions (Solution)' datatype='real' name='[Calculation_941533821487988745]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Storage ID - Split 2] = 5000&#13;&#10;    THEN -ABS([Pricing (With Negative Error)])&#13;&#10;ELSEIF  [Storage ID - Split 2] = 5003&#13;&#10;    THEN 0&#13;&#10;ELSEIF [Storage ID - Split 2] = 5005 &#13;&#10;    THEN ABS([Pricing (With Negative Error)])&#13;&#10;end' />
+            </column>
+            <column caption='Milestone 01' datatype='date' name='[Milestone_01]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Pricing (With Negative Error)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State 1]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column aggregation='Sum' caption='Storage ID - Split 2' datatype='integer' name='[Storage ID - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1645e3c1pmelcm11ofcge06srj6k].[Storage ID]'>
+              <calculation class='tableau' formula='INT( SPLIT( [Storage ID], &quot;.&quot;, 2 ) )' />
+            </column>
+            <column datatype='string' name='[Storage ID]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_941533821487988745]' derivation='None' name='[none:Calculation_941533821487988745:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State 1]' derivation='None' name='[none:State 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Storage ID - Split 2]' derivation='None' name='[none:Storage ID - Split 2:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_941533821487988745]' derivation='Sum' name='[sum:Calculation_941533821487988745:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Milestone_01]' derivation='Year' name='[yr:Milestone_01:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Calculation_941533821487988745:qk]' />
+              <text column='[federated.1645e3c1pmelcm11ofcge06srj6k].[none:Calculation_941533821487988745:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1645e3c1pmelcm11ofcge06srj6k].[none:Storage ID - Split 2:ok] / [federated.1645e3c1pmelcm11ofcge06srj6k].[yr:Milestone_01:ok])</rows>
+        <cols>[federated.1645e3c1pmelcm11ofcge06srj6k].[none:State 1:nk]</cols>
+      </table>
+      <simple-id uuid='{C295E3C0-F571-4D56-882D-C6BA6A0A2992}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Table Structure' name='federated.1645e3c1pmelcm11ofcge06srj6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1645e3c1pmelcm11ofcge06srj6k'>
+            <column caption='Milestone 01' datatype='date' name='[Milestone_01]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Score Average Limit]' role='measure' type='quantitative' />
+            <column-instance column='[Score Average Limit]' derivation='Sum' name='[sum:Score Average Limit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Milestone_01]' derivation='Month-Trunc' name='[tmn:Milestone_01:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Milestone_01]' derivation='Year' name='[yr:Milestone_01:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1645e3c1pmelcm11ofcge06srj6k].[yr:Milestone_01:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Score Average Limit:qk]</rows>
+        <cols>[federated.1645e3c1pmelcm11ofcge06srj6k].[tmn:Milestone_01:qk]</cols>
+      </table>
+      <simple-id uuid='{FE579B91-3E73-4708-BB43-778B55460556}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <repository-location derived-from='https://vizhub/workbooks/Book2_17331575403090/Sheet2?rev=' id='109488742' path='/workbooks/Book2_17331575403090' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Table Structure' name='federated.1645e3c1pmelcm11ofcge06srj6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1645e3c1pmelcm11ofcge06srj6k'>
+            <column caption='Customer Outcome (R1)' datatype='string' name='[Calculation_648236893359509507]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='REGEXP_REPLACE([Customer Outcome], &quot;Corporate&quot;, &quot;Corp&quot;)' />
+            </column>
+            <column caption='Customer Outcome (R2)' datatype='string' name='[Calculation_648236893360504836]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='REGEXP_REPLACE([Calculation_648236893359509507], &quot;Product&quot;, &quot;Prod&quot;)' />
+            </column>
+            <column caption='Customer Outcome (R3)' datatype='string' name='[Calculation_648236893363453958]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF CONTAINS([Customer Outcome], &quot;Corporate&quot;) THEN&#13;&#10;   REPLACE([Customer Outcome], &quot;Corporate&quot;, &quot;Corp&quot;)&#13;&#10;ELSEIF CONTAINS([Customer Outcome], &quot;Product&quot;) THEN&#13;&#10;    REPLACE([Customer Outcome], &quot;Product&quot;, &quot;Prod&quot;)&#13;&#10;ELSEIF CONTAINS([Customer Outcome], &quot;Customer&quot;) THEN&#13;&#10;    REPLACE([Customer Outcome], &quot;Customer&quot;, &quot;Custom&quot;)&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Customer Outcome]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_648236893359509507]' derivation='None' name='[none:Calculation_648236893359509507:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_648236893360504836]' derivation='None' name='[none:Calculation_648236893360504836:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_648236893363453958]' derivation='None' name='[none:Calculation_648236893363453958:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer Outcome]' derivation='None' name='[none:Customer Outcome:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1645e3c1pmelcm11ofcge06srj6k].[none:Customer Outcome:nk] / ([federated.1645e3c1pmelcm11ofcge06srj6k].[none:Calculation_648236893359509507:nk] / ([federated.1645e3c1pmelcm11ofcge06srj6k].[none:Calculation_648236893360504836:nk] / [federated.1645e3c1pmelcm11ofcge06srj6k].[none:Calculation_648236893363453958:nk])))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{BD50A4D6-F913-4C76-8915-C2B35B3A5D58}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <repository-location derived-from='https://vizhub/workbooks/Book2_17331575403090/Sheet3?rev=' id='109488743' path='/workbooks/Book2_17331575403090' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Pivot Structure' name='federated.0lh9e9x0uer2qu11g8d2v17f4rsp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lh9e9x0uer2qu11g8d2v17f4rsp'>
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Pivot Field Values]' role='dimension' type='ordinal' />
+            <column caption='Intermediate Training Data Set_' datatype='table' name='[__tableau_internal_object_id__].[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Quarter-Trunc' name='[tqr:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0lh9e9x0uer2qu11g8d2v17f4rsp].[none:Pivot Field Names:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0lh9e9x0uer2qu11g8d2v17f4rsp].[__tableau_internal_object_id__].[cnt:Intermediate Training Data Set!_1FD50FE35D6644ADAE5CE8531D7F2911:qk]</rows>
+        <cols>[federated.0lh9e9x0uer2qu11g8d2v17f4rsp].[tqr:Pivot Field Values:qk]</cols>
+      </table>
+      <simple-id uuid='{58C11E2B-3499-43FD-9F9D-7D8CBD8D77C6}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <repository-location derived-from='https://vizhub/workbooks/Book2_17331575403090/Sheet4?rev=' id='109488744' path='/workbooks/Book2_17331575403090' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Table Structure' name='federated.1645e3c1pmelcm11ofcge06srj6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1645e3c1pmelcm11ofcge06srj6k'>
+            <column datatype='string' name='[Batch Code]' role='dimension' type='nominal' />
+            <column caption='Round_Price' datatype='real' name='[Calculation_546624428115181568]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ROUND([Pricing (With Negative Error)], 2 )' />
+            </column>
+            <column datatype='real' name='[Pricing (With Negative Error)]' role='measure' type='quantitative' />
+            <column-instance column='[Batch Code]' derivation='None' name='[none:Batch Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_546624428115181568]' derivation='None' name='[none:Calculation_546624428115181568:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_546624428115181568]' derivation='Sum' name='[sum:Calculation_546624428115181568:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pricing (With Negative Error)]' derivation='Sum' name='[sum:Pricing (With Negative Error):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1645e3c1pmelcm11ofcge06srj6k].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Pricing (With Negative Error):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Calculation_546624428115181568:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1645e3c1pmelcm11ofcge06srj6k].[none:Calculation_546624428115181568:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1645e3c1pmelcm11ofcge06srj6k].[none:Calculation_546624428115181568:qk]</column>
+            <column>[federated.1645e3c1pmelcm11ofcge06srj6k].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='144' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1645e3c1pmelcm11ofcge06srj6k].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1645e3c1pmelcm11ofcge06srj6k].[none:Batch Code:nk]</rows>
+        <cols>[federated.1645e3c1pmelcm11ofcge06srj6k].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{6420555E-BE29-4A79-8815-8260723A2EBE}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Table Structure' name='federated.1645e3c1pmelcm11ofcge06srj6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1645e3c1pmelcm11ofcge06srj6k'>
+            <column caption='function if, not Price ' datatype='string' name='[Calculation_546624428120285185]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='if SUM([Pricing (With Negative Error)]) &gt; 40000 &#13;&#10;   AND NOT  SUM([Pricing (With Negative Error)]) &gt; 80000&#13;&#10;then &quot;Yes&quot; &#13;&#10;else &quot;no&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='real' name='[Pricing (With Negative Error)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State 1]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State 1]' derivation='None' name='[none:State 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pricing (With Negative Error)]' derivation='Sum' name='[sum:Pricing (With Negative Error):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_546624428120285185]' derivation='User' name='[usr:Calculation_546624428120285185:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Pricing (With Negative Error):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1645e3c1pmelcm11ofcge06srj6k].[none:State 1:nk] / [federated.1645e3c1pmelcm11ofcge06srj6k].[usr:Calculation_546624428120285185:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{CC58F120-B4FF-4101-B048-AC18F0CFA7CC}' />
+    </worksheet>
+    <worksheet name='Special Logic Functions zn, ifnull, not, isnull'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Table Structure' name='federated.1645e3c1pmelcm11ofcge06srj6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1645e3c1pmelcm11ofcge06srj6k'>
+            <column caption='function if, not Price ' datatype='string' name='[Calculation_546624428120285185]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='if SUM([Pricing (With Negative Error)]) &gt; 40000 &#13;&#10;   AND NOT  SUM([Pricing (With Negative Error)]) &gt; 80000&#13;&#10;then &quot;Yes&quot; &#13;&#10;else &quot;no&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Functions zn' datatype='real' name='[Calculation_941533821481742342]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='ZN(SUM([Pricing (With Negative Error)])) + 10' />
+            </column>
+            <column caption='function IFNULL' datatype='real' name='[Calculation_941533821483057159]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IFNULL(SUM([Pricing (With Negative Error)]), 0)' />
+            </column>
+            <column caption='function isnull' datatype='boolean' name='[Calculation_941533821484539912]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='ISNULL(SUM([Pricing (With Negative Error)]))' />
+            </column>
+            <column datatype='string' name='[Package Type]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Pricing (With Negative Error)]' role='measure' type='quantitative' />
+            <column-instance column='[Package Type]' derivation='None' name='[none:Package Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pricing (With Negative Error)]' derivation='Sum' name='[sum:Pricing (With Negative Error):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_546624428120285185]' derivation='User' name='[usr:Calculation_546624428120285185:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_941533821481742342]' derivation='User' name='[usr:Calculation_941533821481742342:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_941533821483057159]' derivation='User' name='[usr:Calculation_941533821483057159:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_941533821484539912]' derivation='User' name='[usr:Calculation_941533821484539912:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1645e3c1pmelcm11ofcge06srj6k].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Pricing (With Negative Error):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1645e3c1pmelcm11ofcge06srj6k].[usr:Calculation_941533821481742342:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1645e3c1pmelcm11ofcge06srj6k].[usr:Calculation_941533821483057159:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1645e3c1pmelcm11ofcge06srj6k].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Pricing (With Negative Error):qk]&quot;</bucket>
+              <bucket>&quot;[federated.1645e3c1pmelcm11ofcge06srj6k].[usr:Calculation_941533821481742342:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1645e3c1pmelcm11ofcge06srj6k].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1645e3c1pmelcm11ofcge06srj6k].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1645e3c1pmelcm11ofcge06srj6k].[none:Package Type:nk] / ([federated.1645e3c1pmelcm11ofcge06srj6k].[usr:Calculation_546624428120285185:nk] / [federated.1645e3c1pmelcm11ofcge06srj6k].[usr:Calculation_941533821484539912:nk]))</rows>
+        <cols>[federated.1645e3c1pmelcm11ofcge06srj6k].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{0D788AD6-5F24-4E7D-B6FF-9EE1944A3640}' />
+    </worksheet>
+    <worksheet name='case'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Table Structure' name='federated.1645e3c1pmelcm11ofcge06srj6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1645e3c1pmelcm11ofcge06srj6k'>
+            <column datatype='real' name='[Pricing (With Negative Error)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Request Category]' role='dimension' type='nominal' />
+            <column caption='function case ' datatype='integer' name='[elseif (copy)_941533821480886277]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Request Category]&#13;&#10;   WHEN &quot;High Priority Level 1&quot; THEN 1&#13;&#10;   WHEN &quot;High Priority Level 2&quot; THEN 2&#13;&#10;   WHEN &quot;Lower Level Inquiry&quot; THEN 3&#13;&#10;   WHEN &quot;Medium Priority&quot; THEN 4&#13;&#10;   WHEN &quot;Short Term&quot; THEN 5&#13;&#10;   WHEN &quot;Special Inquiry&quot; THEN 6&#13;&#10;   WHEN &quot;Standard Inquiry&quot; THEN 7&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column-instance column='[Request Category]' derivation='None' name='[none:Request Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pricing (With Negative Error)]' derivation='Sum' name='[sum:Pricing (With Negative Error):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[elseif (copy)_941533821480886277]' derivation='Sum' name='[sum:elseif (copy)_941533821480886277:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1645e3c1pmelcm11ofcge06srj6k].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Pricing (With Negative Error):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:elseif (copy)_941533821480886277:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1645e3c1pmelcm11ofcge06srj6k].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1645e3c1pmelcm11ofcge06srj6k].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1645e3c1pmelcm11ofcge06srj6k].[none:Request Category:nk]</rows>
+        <cols>[federated.1645e3c1pmelcm11ofcge06srj6k].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{A4C85A19-003D-4104-8E6D-3BF4F91C29D5}' />
+    </worksheet>
+    <worksheet name='elseif'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Table Structure' name='federated.1645e3c1pmelcm11ofcge06srj6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1645e3c1pmelcm11ofcge06srj6k'>
+            <column caption='function elseif' datatype='integer' name='[Calculation_941533821478842370]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF  [Request Category] = &quot;High Priority Level 1&quot; THEN 1&#13;&#10;ELSEIF  [Request Category] = &quot;High Priority Level 2&quot; THEN 1&#13;&#10;ELSEIF  [Request Category] = &quot;Lower Level Inquiry&quot; THEN 1&#13;&#10;ELSEIF  [Request Category] = &quot;Medium Priority&quot; THEN 1&#13;&#10;ELSEIF  [Request Category] = &quot;Short Term&quot; THEN 1&#13;&#10;ELSEIF  [Request Category] = &quot;Special Inquiry&quot; THEN 1&#13;&#10;ELSEIF  [Request Category] = &quot;Standard Inquiry&quot; THEN 1&#13;&#10;ELSE 0&#13;&#10;END' />
+            </column>
+            <column datatype='real' name='[Pricing (With Negative Error)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Request Category]' role='dimension' type='nominal' />
+            <column-instance column='[Request Category]' derivation='None' name='[none:Request Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_941533821478842370]' derivation='Sum' name='[sum:Calculation_941533821478842370:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pricing (With Negative Error)]' derivation='Sum' name='[sum:Pricing (With Negative Error):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1645e3c1pmelcm11ofcge06srj6k].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Calculation_941533821478842370:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Pricing (With Negative Error):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1645e3c1pmelcm11ofcge06srj6k].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Calculation_941533821478842370:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Pricing (With Negative Error):qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[federated.1645e3c1pmelcm11ofcge06srj6k].[none:Request Category:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>%all%</bucket>
+              <bucket>&quot;High Priority Level 2&quot;</bucket>
+              <bucket>&quot;Low Level Inquiry&quot;</bucket>
+              <bucket>&quot;High Priority Level 1&quot;</bucket>
+              <bucket>&quot;Special Inquiry&quot;</bucket>
+              <bucket>&quot;Medium Priority&quot;</bucket>
+              <bucket>&quot;Standard Inquiry&quot;</bucket>
+              <bucket>&quot;Short Term&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1645e3c1pmelcm11ofcge06srj6k].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Calculation_941533821478842370:qk]' palette='orange_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Calculation_941533821478842370:qk]' />
+              <text column='[federated.1645e3c1pmelcm11ofcge06srj6k].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1645e3c1pmelcm11ofcge06srj6k].[none:Request Category:nk]</rows>
+        <cols>[federated.1645e3c1pmelcm11ofcge06srj6k].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{0D6702AB-79E7-4642-B459-C2758150ED92}' />
+    </worksheet>
+    <worksheet name='if'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Table Structure' name='federated.1645e3c1pmelcm11ofcge06srj6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1645e3c1pmelcm11ofcge06srj6k'>
+            <column caption='function multiple combination' datatype='integer' name='[Calculation_941533821473660928]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF  (DATEPART(&apos;year&apos;, [Milestone_01]) = 2001&#13;&#10;    AND [Regional Group] = &quot;Eastern&quot;)&#13;&#10;    OR  [State 1] = &quot;NSW&quot;&#13;&#10;    &#13;&#10;THEN&#13;&#10;    1&#13;&#10;ELSE&#13;&#10;    0&#13;&#10;END' />
+            </column>
+            <column caption='Milestone 01' datatype='date' name='[Milestone_01]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Regional Group]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State 1]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Regional Group]' derivation='None' name='[none:Regional Group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State 1]' derivation='None' name='[none:State 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_941533821473660928]' derivation='Sum' name='[sum:Calculation_941533821473660928:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Milestone_01]' derivation='Year' name='[yr:Milestone_01:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='80' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Calculation_941533821473660928:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1645e3c1pmelcm11ofcge06srj6k].[yr:Milestone_01:ok] / ([federated.1645e3c1pmelcm11ofcge06srj6k].[none:State 1:nk] / [federated.1645e3c1pmelcm11ofcge06srj6k].[none:Regional Group:nk]))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{C0494061-0D40-48BD-AA07-B2B00BEA37BF}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='63'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9E94BFA4-1413-4AD8-9223-49B79ED55CC6}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{514337DE-3978-4F18-B073-1E44896C5B24}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0lh9e9x0uer2qu11g8d2v17f4rsp].[none:Pivot Field Names:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A2AEA2BF-4D50-4B48-AB88-86CAB1F4050F}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B1E0AD95-FBDA-43E1-A986-CFB3F2A8D5EE}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0246F665-3C8B-46C5-9599-5FC608007AE0}' />
+    </window>
+    <window class='worksheet' name='if'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{78C830AB-D858-49B2-BBEB-67AB9CEACC7B}' />
+    </window>
+    <window class='worksheet' name='Nested if'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2D0D9EB3-0847-4AA3-831E-25B79C2ECA36}' />
+    </window>
+    <window class='worksheet' name='elseif'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Calculation_941533821478842370:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2B52A2DB-3FB9-4EE9-8FF7-F8C2AF393682}' />
+    </window>
+    <window class='worksheet' name='case'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B3EFEDC9-E6BA-4144-9469-5180E0B46EB6}' />
+    </window>
+    <window class='worksheet' name='Special Logic Functions zn, ifnull, not, isnull'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1859F6E1-2160-4712-BDC7-C62A2E965493}' />
+    </window>
+    <window class='worksheet' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Calculation_941533821487988745:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{739C49AB-7C1D-4B45-AFF1-009F0B5FF0E6}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='0'>
+            <card pane-specification-id='0' param='[federated.1645e3c1pmelcm11ofcge06srj6k].[yr:Milestone_01:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{159FBD33-47CC-4FAA-A2D4-DE34EBEEA9F1}' />
+    </window>
+  </windows>
+</workbook>
