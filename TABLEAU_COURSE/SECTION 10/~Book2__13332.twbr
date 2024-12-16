@@ -796,7 +796,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='Intermediate+Training+Data+Set_2021.09.24_V1+-+Part+2' name='excel-direct.1go5ve01f2myos1f9lwch0kwijvl'>
-            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' interpretationMode='1' validate='no' workgroup-auth-mode='as-is' />
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/lucas/Desktop/COURSES/TABLEAU AND POWER BI/TABLEAU_COURSE/SECTION 10/Intermediate+Training+Data+Set_2021.09.24_V1+-+Part+2.xlsx' interpretationMode='1' password='' server='' validate='no' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='excel-direct.1go5ve01f2myos1f9lwch0kwijvl' name='Intermediate Training Data Set_' table='[&apos;Intermediate Training Data Set_$&apos;]' type='table'>
@@ -1531,6 +1531,15 @@
       <column caption='Customer Outcome (R3)' datatype='string' name='[Calculation_648236893363453958]' role='dimension' type='nominal'>
         <calculation class='tableau' formula='IF CONTAINS([Customer Outcome], &quot;Corporate&quot;) THEN&#13;&#10;   REPLACE([Customer Outcome], &quot;Corporate&quot;, &quot;Corp&quot;)&#13;&#10;ELSEIF CONTAINS([Customer Outcome], &quot;Product&quot;) THEN&#13;&#10;    REPLACE([Customer Outcome], &quot;Product&quot;, &quot;Prod&quot;)&#13;&#10;ELSEIF CONTAINS([Customer Outcome], &quot;Customer&quot;) THEN&#13;&#10;    REPLACE([Customer Outcome], &quot;Customer&quot;, &quot;Custom&quot;)&#13;&#10;END' />
       </column>
+      <column aggregation='Sum' caption='DATEPART(YEAR)' datatype='integer' name='[Calculation_938156123169345536]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATEPART(&apos;year&apos;,  [Milestone_01])' />
+      </column>
+      <column aggregation='Sum' caption='DATEDIFF' datatype='integer' name='[Calculation_938156123171700737]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;day&apos;, [Milestone_01], [Milestone_02])' />
+      </column>
+      <column caption='DATEADD()' datatype='date' name='[Calculation_938156123174416386]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE(DATEADD(&apos;year&apos;, 5, [Milestone_01]))' />
+      </column>
       <column caption='function multiple combination' datatype='integer' name='[Calculation_941533821473660928]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='IF  (DATEPART(&apos;year&apos;, [Milestone_01]) = 2001&#13;&#10;    AND [Regional Group] = &quot;Eastern&quot;)&#13;&#10;    OR  [State 1] = &quot;NSW&quot;&#13;&#10;    &#13;&#10;THEN&#13;&#10;    1&#13;&#10;ELSE&#13;&#10;    0&#13;&#10;END' />
       </column>
@@ -1590,9 +1599,8 @@
       <column caption='function case ' datatype='integer' name='[elseif (copy)_941533821480886277]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='CASE [Request Category]&#13;&#10;   WHEN &quot;High Priority Level 1&quot; THEN 1&#13;&#10;   WHEN &quot;High Priority Level 2&quot; THEN 2&#13;&#10;   WHEN &quot;Lower Level Inquiry&quot; THEN 3&#13;&#10;   WHEN &quot;Medium Priority&quot; THEN 4&#13;&#10;   WHEN &quot;Short Term&quot; THEN 5&#13;&#10;   WHEN &quot;Special Inquiry&quot; THEN 6&#13;&#10;   WHEN &quot;Standard Inquiry&quot; THEN 7&#13;&#10;ELSE 0&#13;&#10;END' />
       </column>
-      <column-instance column='[Milestone_01]' derivation='Year' name='[yr:Milestone_01:ok]' pivot='key' type='ordinal' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_048trfd0yyv3oy17ehgjz1foiuu2.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/05/2024 07:19:07 PM' username=''>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp 1/#TableauTemp_14rf0zt0gnc02r18kgktl1x9pxg9.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/16/2024 12:04:04 PM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -2200,105 +2208,6 @@
         </connection>
       </extract>
       <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[yr:Milestone_01:ok]' type='palette'>
-            <map to='#499894'>
-              <bucket>2008</bucket>
-            </map>
-            <map to='#499894'>
-              <bucket>2028</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>%null%</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>2020</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>2004</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>2024</bucket>
-            </map>
-            <map to='#79706e'>
-              <bucket>2012</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>2009</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>2030</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>2005</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>2025</bucket>
-            </map>
-            <map to='#9d7660'>
-              <bucket>2018</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>2001</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>2021</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>2016</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>2006</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>2026</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>2013</bucket>
-            </map>
-            <map to='#d37295'>
-              <bucket>2014</bucket>
-            </map>
-            <map to='#d4a6c8'>
-              <bucket>2017</bucket>
-            </map>
-            <map to='#d7b5a6'>
-              <bucket>2019</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>2010</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>2031</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>2007</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>2027</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>2002</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>2022</bucket>
-            </map>
-            <map to='#fabfd2'>
-              <bucket>2015</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>2011</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>2003</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>2023</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;Brazil&quot;' />
       </semantic-values>
@@ -2314,6 +2223,7 @@
         <field-sort-custom-order field='Storage ID' />
         <field-sort-custom-order field='Latest Milestone' />
         <field-sort-custom-order field='Milestone_01' />
+        <field-sort-custom-order field='Calculation_938156123169345536' />
         <field-sort-custom-order field='Milestone_02' />
         <field-sort-custom-order field='Milestone_03' />
         <field-sort-custom-order field='Milestone_04' />
@@ -2418,6 +2328,780 @@
     </datasource>
   </datasources>
   <worksheets>
+    <worksheet name='DATEADD'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Table Structure' name='federated.1645e3c1pmelcm11ofcge06srj6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1645e3c1pmelcm11ofcge06srj6k'>
+            <column caption='DATEADD()' datatype='date' name='[Calculation_938156123174416386]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEADD(&apos;year&apos;, 5, [Milestone_01]))' />
+            </column>
+            <column caption='Milestone 01' datatype='date' name='[Milestone_01]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_938156123174416386]' derivation='Year' name='[yr:Calculation_938156123174416386:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Milestone_01]' derivation='Year' name='[yr:Milestone_01:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1645e3c1pmelcm11ofcge06srj6k].[yr:Milestone_01:ok] / [federated.1645e3c1pmelcm11ofcge06srj6k].[yr:Calculation_938156123174416386:ok])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{B6BAEAD5-3B03-4CE2-A6C8-05FA9C7D5087}' />
+    </worksheet>
+    <worksheet name='DATEDIFF'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Table Structure' name='federated.1645e3c1pmelcm11ofcge06srj6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1645e3c1pmelcm11ofcge06srj6k'>
+            <column datatype='string' name='[Batch Code]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='DATEDIFF' datatype='integer' name='[Calculation_938156123171700737]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;day&apos;, [Milestone_01], [Milestone_02])' />
+            </column>
+            <column caption='Milestone 01' datatype='date' name='[Milestone_01]' role='dimension' type='ordinal' />
+            <column caption='Milestone 02' datatype='date' name='[Milestone_02]' role='dimension' type='ordinal' />
+            <column-instance column='[Batch Code]' derivation='None' name='[none:Batch Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_938156123171700737]' derivation='None' name='[none:Calculation_938156123171700737:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1645e3c1pmelcm11ofcge06srj6k].[none:Calculation_938156123171700737:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='0' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='5' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='6' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='7' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='8' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='9' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='10' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='11' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='12' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='13' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='14' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='15' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='16' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='17' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='18' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='19' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='20' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='21' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='22' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='23' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='24' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='25' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='26' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='27' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='28' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='29' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='30' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='31' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='32' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='33' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='34' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='35' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='36' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='37' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='38' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='39' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='40' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='41' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='42' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='43' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='44' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='45' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='46' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='47' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='48' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='49' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='50' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='51' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='52' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='53' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='54' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='55' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='56' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='57' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='58' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='59' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='60' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='61' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='62' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='63' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='65' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='67' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='68' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='69' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='70' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='71' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='72' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='73' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='74' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='75' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='76' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='78' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='79' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='81' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='82' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='84' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='87' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='88' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='90' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='93' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='94' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='95' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='97' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='98' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='99' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='104' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='106' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='107' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='108' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='112' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='114' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='115' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='118' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='121' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='128' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='130' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='137' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='149' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='152' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='154' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='172' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='223' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='236' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='251' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='252' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='255' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='265' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='273' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='274' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='276' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='278' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='280' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='283' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='284' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='285' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='287' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='288' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='291' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='292' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='293' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='294' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='297' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='298' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='299' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='300' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='301' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='304' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='305' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='306' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='307' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='308' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='309' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='310' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='311' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='312' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='313' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='315' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='316' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='320' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='321' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='322' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='323' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='324' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='325' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='328' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='330' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='331' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='332' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='334' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='335' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='336' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='337' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='338' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='340' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='342' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='343' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='345' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='346' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='347' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='348' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='349' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='351' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='352' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='353' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='354' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='355' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='356' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='357' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='358' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='359' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='361' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='362' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='363' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='364' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='366' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='367' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='368' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='369' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='371' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='373' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='374' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='377' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='378' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='379' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='381' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='382' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='383' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='385' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='386' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='387' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='388' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='389' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='390' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='392' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='393' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='395' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='396' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='400' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='401' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='402' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='410' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='414' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='417' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='420' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='421' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='422' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='423' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='425' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='427' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='429' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='430' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='435' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='444' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='449' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='462' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='473' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='475' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='489' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='512' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='556' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='577' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='583' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='593' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='603' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='609' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='610' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='620' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='624' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='641' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='642' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='643' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='650' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='651' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='652' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='653' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='654' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='655' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='663' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='664' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='666' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='670' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='671' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='672' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='673' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='675' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='676' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='678' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='681' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='683' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='684' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='685' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='687' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='689' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='692' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='693' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='694' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='695' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='697' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='701' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='703' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='704' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='705' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='707' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='708' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='709' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='710' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='711' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='713' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='715' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='716' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='718' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='719' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='721' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='722' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='724' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='726' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='727' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='728' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='729' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='731' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='733' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='735' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='736' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='737' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='740' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='741' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='744' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='745' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='746' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='749' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='750' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='751' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='752' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='753' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='754' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='756' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='759' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='761' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='762' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='764' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='766' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='767' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='775' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='777' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='778' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='779' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='784' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='786' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='789' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='795' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='798' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='800' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='810' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='812' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='826' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='828' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='845' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='851' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='898' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='929' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='958' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='980' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='994' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1003' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1010' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1013' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1018' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1020' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1021' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1022' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1023' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1029' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1030' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1032' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1033' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1034' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1039' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1043' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1048' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1050' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1052' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1053' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1056' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1058' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1059' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1061' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1064' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1067' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1073' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1074' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1075' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1077' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1079' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1080' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1082' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1083' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1086' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1088' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1091' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1093' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1095' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1096' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1097' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1098' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1101' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1102' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1104' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1105' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1107' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1112' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1117' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1118' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1120' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1121' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1122' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1123' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1126' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1127' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1129' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1130' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1131' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1136' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1137' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1143' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1146' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1151' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1154' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1155' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1156' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1157' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1165' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1166' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1167' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1169' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1171' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1172' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1183' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1192' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1250' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1254' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1264' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1267' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1271' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1319' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1370' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1375' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1387' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1388' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1391' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1392' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1393' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1395' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1399' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1401' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1402' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1403' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1405' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1407' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1410' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1413' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1414' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1417' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1421' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1423' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1424' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1430' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1433' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1434' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1435' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1438' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1440' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1444' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1445' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1447' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1448' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1450' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1451' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1454' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1455' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1456' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1457' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1460' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1466' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1468' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1470' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1471' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1472' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1474' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1475' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1476' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1477' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1482' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1490' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1491' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1492' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1493' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1495' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1496' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1505' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1508' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1509' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1510' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1518' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1519' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1524' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1546' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1551' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1553' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1588' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1752' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1758' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1771' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1775' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1776' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1781' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1783' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1787' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1789' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1790' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1793' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1795' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1797' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1798' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1799' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1801' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1803' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1804' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1808' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1811' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1813' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1817' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1818' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1819' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1820' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1823' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1825' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1826' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1827' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1828' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1832' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1841' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1844' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1851' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1852' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1858' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1861' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1862' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1864' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1866' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1867' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1880' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1881' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1883' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1887' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1900' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1907' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1983' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='1987' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2073' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2099' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2110' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2118' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2123' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2125' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2139' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2142' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2147' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2149' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2152' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2155' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2160' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2162' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2163' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2169' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2174' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2178' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2179' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2187' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2189' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2191' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2195' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2200' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2202' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2203' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2206' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2209' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2218' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2219' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2223' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2231' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2235' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2237' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2241' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2242' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2244' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2245' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2252' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2257' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2279' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2302' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2324' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2399' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2448' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2489' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2492' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2493' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2499' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2507' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2513' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2514' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2517' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2518' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2522' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2526' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2528' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2541' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2542' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2543' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2549' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2552' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2555' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2560' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2561' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2572' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2600' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2603' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2609' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2619' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2624' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2749' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2827' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2840' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2844' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2874' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2877' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2879' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2890' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2892' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2894' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2896' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2898' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2902' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2904' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2905' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2913' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2923' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2937' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2939' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2942' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2943' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2966' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='2984' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3203' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3213' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3218' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3242' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3248' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3251' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3266' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3274' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3277' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3278' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3288' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3299' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3301' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3310' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3320' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3326' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3343' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3358' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3360' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3382' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3580' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3592' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3602' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3616' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3619' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3621' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3625' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3626' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3643' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3645' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3661' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3666' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3680' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3682' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3685' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3695' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3705' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3923' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3936' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3938' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3980' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3984' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3988' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='3994' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4023' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4054' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4089' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4241' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4328' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4347' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4355' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4411' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4610' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4706' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4709' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4715' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4733' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4761' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4772' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='4781' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='5096' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='5114' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='5122' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='5125' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='5134' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='5142' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='5192' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='5400' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='5434' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='5463' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='5468' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='5811' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='5877' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='6137' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='6138' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='6202' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='6473' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='6513' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='6561' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='6957' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='7021' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='7575' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='7931' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='7984' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='8769' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='8772' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='9038' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='9082' />
+              <groupfilter function='member' level='[none:Calculation_938156123171700737:ok]' member='10225' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1645e3c1pmelcm11ofcge06srj6k].[none:Calculation_938156123171700737:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1645e3c1pmelcm11ofcge06srj6k].[none:Batch Code:nk] / [federated.1645e3c1pmelcm11ofcge06srj6k].[none:Calculation_938156123171700737:ok])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{66A6AC03-A0D5-44F7-ABA5-A04990D11A04}' />
+    </worksheet>
     <worksheet name='Nested if'>
       <table>
         <view>
@@ -2563,19 +3247,10 @@
       </table>
       <simple-id uuid='{C295E3C0-F571-4D56-882D-C6BA6A0A2992}' />
     </worksheet>
-    <worksheet name='Sheet 12'>
+    <worksheet name='Sheet 15'>
       <table>
         <view>
-          <datasources>
-            <datasource caption='Table Structure' name='federated.1645e3c1pmelcm11ofcge06srj6k' />
-          </datasources>
-          <datasource-dependencies datasource='federated.1645e3c1pmelcm11ofcge06srj6k'>
-            <column caption='Milestone 01' datatype='date' name='[Milestone_01]' role='dimension' type='ordinal' />
-            <column datatype='real' name='[Score Average Limit]' role='measure' type='quantitative' />
-            <column-instance column='[Score Average Limit]' derivation='Sum' name='[sum:Score Average Limit:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[Milestone_01]' derivation='Month-Trunc' name='[tmn:Milestone_01:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[Milestone_01]' derivation='Year' name='[yr:Milestone_01:ok]' pivot='key' type='ordinal' />
-          </datasource-dependencies>
+          <datasources />
           <aggregation value='true' />
         </view>
         <style />
@@ -2584,22 +3259,13 @@
             <view>
               <breakdown value='auto' />
             </view>
-            <mark class='Line' />
-            <encodings>
-              <color column='[federated.1645e3c1pmelcm11ofcge06srj6k].[yr:Milestone_01:ok]' />
-            </encodings>
-            <style>
-              <style-rule element='mark'>
-                <format attr='mark-labels-cull' value='true' />
-                <format attr='mark-labels-show' value='false' />
-              </style-rule>
-            </style>
+            <mark class='Automatic' />
           </pane>
         </panes>
-        <rows>[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Score Average Limit:qk]</rows>
-        <cols>[federated.1645e3c1pmelcm11ofcge06srj6k].[tmn:Milestone_01:qk]</cols>
+        <rows />
+        <cols />
       </table>
-      <simple-id uuid='{FE579B91-3E73-4708-BB43-778B55460556}' />
+      <simple-id uuid='{02FD1B06-7AD6-45CC-8FDE-AA4B61CA21C9}' />
     </worksheet>
     <worksheet name='Sheet 2'>
       <repository-location derived-from='https://vizhub/workbooks/Book2_17331575403090/Sheet2?rev=' id='109488742' path='/workbooks/Book2_17331575403090' revision='' />
@@ -2897,6 +3563,44 @@
         <cols>[federated.1645e3c1pmelcm11ofcge06srj6k].[:Measure Names]</cols>
       </table>
       <simple-id uuid='{A4C85A19-003D-4104-8E6D-3BF4F91C29D5}' />
+    </worksheet>
+    <worksheet name='datepart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Table Structure' name='federated.1645e3c1pmelcm11ofcge06srj6k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1645e3c1pmelcm11ofcge06srj6k'>
+            <column aggregation='Sum' caption='DATEPART(YEAR)' datatype='integer' name='[Calculation_938156123169345536]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATEPART(&apos;year&apos;,  [Milestone_01])' />
+            </column>
+            <column caption='Milestone 01' datatype='date' name='[Milestone_01]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Pricing (With Negative Error)]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_938156123169345536]' derivation='None' name='[none:Calculation_938156123169345536:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pricing (With Negative Error)]' derivation='Sum' name='[sum:Pricing (With Negative Error):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1645e3c1pmelcm11ofcge06srj6k].[none:Calculation_938156123169345536:qk]' included-values='in-range'>
+            <min>2001</min>
+            <max>2031</max>
+          </filter>
+          <slices>
+            <column>[federated.1645e3c1pmelcm11ofcge06srj6k].[none:Calculation_938156123169345536:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1645e3c1pmelcm11ofcge06srj6k].[sum:Pricing (With Negative Error):qk]</rows>
+        <cols>[federated.1645e3c1pmelcm11ofcge06srj6k].[none:Calculation_938156123169345536:qk]</cols>
+      </table>
+      <simple-id uuid='{956EAA95-74F7-4913-B227-3517421884B3}' />
     </worksheet>
     <worksheet name='elseif'>
       <table>
@@ -3301,7 +4005,7 @@
       </cards>
       <simple-id uuid='{739C49AB-7C1D-4B45-AFF1-009F0B5FF0E6}' />
     </window>
-    <window class='worksheet' maximized='true' name='Sheet 12'>
+    <window class='worksheet' name='datepart'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -3321,13 +4025,77 @@
             <card type='title' />
           </strip>
         </edge>
-        <edge name='right'>
-          <strip size='0'>
-            <card pane-specification-id='0' param='[federated.1645e3c1pmelcm11ofcge06srj6k].[yr:Milestone_01:ok]' type='color' />
+      </cards>
+      <simple-id uuid='{B0D1BC69-7C99-4C34-92D5-FEF8104DD470}' />
+    </window>
+    <window class='worksheet' name='DATEDIFF'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{159FBD33-47CC-4FAA-A2D4-DE34EBEEA9F1}' />
+      <simple-id uuid='{FF595674-640F-42BE-805A-465C0F7587C8}' />
+    </window>
+    <window class='worksheet' name='DATEADD'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{98563E1D-095F-4F75-B5C7-E459F85A1EF8}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 15'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='30'>
+            <card type='columns' />
+          </strip>
+          <strip size='30'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{97655F4C-2FE7-4CD8-A245-609A63AD2241}' />
     </window>
   </windows>
 </workbook>
